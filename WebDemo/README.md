@@ -1,7 +1,7 @@
 
 # Hybrid Net based Summarization with Cascading Agents
 Here we supprt online demo and video demonstration. Also, in this webpage we describe some critical research results briefly. For more detail, please contact with me by github or go to our paper as following:
-- [googleDrive](https://drive.google.com/file/d/1mYhUS-zq_LUPwLV-pFa-zsBsFGgAj5v5/view?usp=sharing)
+- [Link to googleDrive](https://drive.google.com/file/d/1mYhUS-zq_LUPwLV-pFa-zsBsFGgAj5v5/view?usp=sharing)
 
 # Preview
 
@@ -10,7 +10,7 @@ Here we supprt online demo and video demonstration. Also, in this webpage we des
 ![Here](https://i.imgur.com/ZXUfrZ9.png)
 
 ### Demo Site: 
-[Here](140.116.245.103:5000)
+[Here]((https://140.116.245.103:5000)
 
 
 ### Directory
