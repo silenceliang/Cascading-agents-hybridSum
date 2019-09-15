@@ -5,9 +5,53 @@
 
 ### Screenshot
 
-![ElaAdmin admin dashboard template preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ela-admin-free-admin-panel-template.jpg)
+![](https://i.imgur.com/ZXUfrZ9.png))
 
-### Demo Site: [Here](https://colorlib.com/polygon/elaadmin/index.html)
+### Demo Site: [Here](https://140.116.245.105:5000)
+
+
+### Directory
+
+WebDemo/
+├── main.py
+├── README.md
+├── requirements.txt
+├── static
+│   ├── assets
+│   │   ├── css
+│   │   └── js
+│   └── images
+│       ├── ablation.png
+│       ├── abs.png
+│       ├── abstract.png
+│       ├── beamsize.png
+│       ├── comp.png
+│       ├── diverse.png
+│       ├── document.png
+│       ├── embed.png
+│       ├── ex1.png
+│       ├── ex2.png
+│       ├── human.png
+│       ├── ikm.png
+│       ├── local.png
+│       ├── logo.psd
+│       └── model.png
+├── templates
+│   └── index.html
+└── ZYweb.sh
+
+#### main.py 
+Running the web server by Flask package.
+
+#### templates
+Here is a placement for .html scripts.
+
+#### static
+Including javascript and css, raw resources such as image are here.
+
+#### ZYweb.sh
+A shell script for restart web server when we reboot our machine.
+
 
 ### TOC
 - [Built With](#built-with)
