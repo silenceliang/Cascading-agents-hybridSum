@@ -70,6 +70,7 @@ Test set
 | ext + abs          | (40.02, 17.53, 37.46)  |
 | +absAgent 	     | (40.79, 18.53, 37.92)  |
 | + rerank           | (41.39, 18.74, 38.51)  |
+
 **NOTE**:
 The original models in the paper are trained with pytorch 1.1.0 on python 3. 
 
