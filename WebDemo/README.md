@@ -1,13 +1,13 @@
 
 # Hybrid Net based Summarization with Cascading Agents
 Here we supprt online demo and video demonstration. Also, in this webpage we describe some critical research results briefly. For more detail, please contact with me by github or go to our paper as following:
-![links](https://drive.google.com/file/d/1mYhUS-zq_LUPwLV-pFa-zsBsFGgAj5v5/view?usp=sharing)
+- ![googleDrive](https://drive.google.com/file/d/1mYhUS-zq_LUPwLV-pFa-zsBsFGgAj5v5/view?usp=sharing/)
 
 # Preview
 
 ### Screenshot
 
-![](https://i.imgur.com/ZXUfrZ9.png)
+![Here](https://i.imgur.com/ZXUfrZ9.png)
 
 ### Demo Site: [Here](140.116.245.103:5000)
 
@@ -24,7 +24,6 @@ Here we supprt online demo and video demonstration. Also, in this webpage we des
 	 	* js
 	 	* images
 	* templates
-	    	* index.html
 	* ZYweb.sh
 
 #### main.py 
