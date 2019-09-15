@@ -9,8 +9,7 @@ Here we supprt online demo and video demonstration. Also, in this webpage we des
 
 ![Here](https://i.imgur.com/ZXUfrZ9.png)
 
-### Demo Site: 
-[Here](https://140.116.245.103:5000)
+### Demo Site: [Here](http://140.116.245.103:5000)
 
 
 ### Directory
