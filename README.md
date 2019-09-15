@@ -1,37 +1,20 @@
-# Fast Abstractive Summarization-RL
-This repository contains the code for our ACL 2018 paper:
 
-*[Fast Abstractive Summarization with Reinforce-Selected Sentence Rewriting](https://arxiv.org/abs/1805.11080)*.
-
-You can
-1. Look at the generated summaries and evaluate the ROUGE/METEOR scores
-2. Run decoding of the pretrained model
-3. Train your own model
-
-If you use this code, please cite our paper:
-```
-@inproceedings{chen2018fast,
-  title={Fast Abstractive Summarization with Reinforce-Selected Sentence Rewriting},
-  author={Yen-Chun Chen and Mohit Bansal},
-  booktitle={Proceedings of ACL},
-  year={2018}
-}
-```
+# Hybrid Net based Summarization with Cascading Agents
+Here we supprt online demo and video demonstration. Also, in this webpage we describe some critical research results briefly. For more detail, please contact with me by github or go to our paper as following:
+- [Link to googleDrive](https://drive.google.com/file/d/1mYhUS-zq_LUPwLV-pFa-zsBsFGgAj5v5/view?usp=sharing)
 
 ## Dependencies
 - **Python 3** (tested on python 3.6)
-- [PyTorch](https://github.com/pytorch/pytorch) 0.4.0
+- [PyTorch](https://github.com/pytorch/pytorch) 1.1.0
     - with GPU and CUDA enabled installation (though the code is runnable on CPU, it would be way too slow)
 - [gensim](https://github.com/RaRe-Technologies/gensim)
 - [cytoolz](https://github.com/pytoolz/cytoolz)
 - [tensorboardX](https://github.com/lanpa/tensorboard-pytorch)
 - [pyrouge](https://github.com/bheinzerling/pyrouge) (for evaluation)
 
-You can use the python package manager of your choice (*pip/conda*) to install the dependencies.
 The code is tested on the *Linux* operating system.
 
-## Evaluate the output summaries from our ACL paper
-Download the output summaries *[here](https://bit.ly/acl18_results)*.
+## Evaluate the output summaries
 
 To evaluate, you will need to download and setup the official ROUGE and METEOR
 packages.
@@ -46,30 +29,14 @@ An alternative can be found
 Please specify the path to your ROUGE package by setting the environment variable
 `export ROUGE=[path/to/rouge/directory]`.
 
-
-For METEOR, we only need the JAR file `meteor-1.5.jar`.
-Please specify the file by setting the environment variable
-`export METEOR=[path/to/meteor/jar]`.
-
-Run
-```
-python eval_acl.py --[rouge/meteor] --decode_dir=[path/to/decoded/files]
-```
-to get the ROUGE/METEOR scores reported in the paper.
-
 ## Decode summaries from the pretrained model
-Download the pretrained models *[here](https://bit.ly/acl18_pretrained)*.
+Download the pretrained models *[here](https://drive.google.com/drive/folders/1TgS-Ug-BdtMwZh8up6uWDAxVlbwo908G?usp=sharing)*.
 You will also need a preprocessed version of the CNN/DailyMail dataset.
 Please follow the instructions
 *[here](https://github.com/ChenRocks/cnn-dailymail)*
 for downloading and preprocessing the CNN/DailyMail dataset.
 After that, specify the path of data files by setting the environment variable
 `export DATA=[path/to/decompressed/data]`
-
-We provide 2 versions of pretrained models.
-Using `acl` you can reproduce the results reported in our paper.
-Using `new` you will get our latest result trained with a newer version of PyTorch library
-which leads to slightly higher scores.
 
 To decode, run
 ```
@@ -96,35 +63,15 @@ python eval_full_model.py --[rouge/meteor] --decode_dir=[path/to/save/decoded/fi
 ### Results
 You should get the following results
 
-Validation set
-
-| Models             | ROUGEs (R-1, R-2, R-L) | METEOR |
-| ------------------ |:----------------------:| ------:|
-| **acl** |
-| rnn-ext + abs + RL | (41.01, 18.20, 38.57)  |  21.10 |
-| + rerank           | (41.74, 18.39, 39.40)  |  20.45 |
-| **new** |
-| rnn-ext + abs + RL | (41.23, 18.45, 38.71)  |  21.14 |
-| + rerank           | (42.06, 18.80, 39.68)  |  20.58 |
-
 Test set
 
-| Models             | ROUGEs (R-1, R-2, R-L) | METEOR |
-| ------------------ |:----------------------:| ------:|
-| **acl** |
-| rnn-ext + abs + RL | (40.03, 17.61, 37.58)  |  21.00 |
-| + rerank           | (40.88, 17.81, 38.53)  |  20.38 |
-| **new** |
-| rnn-ext + abs + RL | (40.41, 17.92, 37.87)  |  21.13 |
-| + rerank           | (41.20, 18.18, 38.79)  |  20.56 |
-
+| Models             | ROUGEs (R-1, R-2, R-L) |
+| ------------------ |:----------------------:|
+| ext + abs          | (40.02, 17.53, 37.46)  |
+| +absAgent 	     | (40.79, 18.53, 37.92)  |
+| + rerank           | (41.39, 18.74, 38.51)  |
 **NOTE**:
-The original models in the paper are trained with pytorch 0.2.0 on python 2. 
-After the acceptance of the paper, we figured it is better for the community if
-we release the code with latest libraries so that it becomes easier to build new
-models/techniques on top of our work. 
-This results in a negligible difference w.r.t. our paper results when running the old pretrained model;
-and gives slightly better scores than our paper if running the new pretrained model.
+The original models in the paper are trained with pytorch 1.1.0 on python 3. 
 
 ## Train your own models
 Please follow the instructions
@@ -156,4 +103,15 @@ After the training finishes you will be able to run the decoding and evaluation 
 The above will use the best hyper-parameters we used in the paper as default.
 Please refer to the respective source code for options to set the hyper-parameters.
 
-# CasacdingAgentsHybridSum
+## Acknowledgement
+
+Thanks to the open source provided from Yen-Chun Chen and Mohit Bansal that assists us to fininsh the whole research.
+We appreciate and show the reference below: 
+```
+@inproceedings{chen2018fast,
+  title={Fast Abstractive Summarization with Reinforce-Selected Sentence Rewriting},
+  author={Yen-Chun Chen and Mohit Bansal},
+  booktitle={Proceedings of ACL},
+  year={2018}
+}
+```
