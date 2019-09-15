@@ -1,0 +1,7 @@
+torch==1.1.0
+cytoolz
+pyrouge
+Flask
+flask-mongoengine
+Flask-Script
+flask_pymongo
