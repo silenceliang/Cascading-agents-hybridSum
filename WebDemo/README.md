@@ -1,5 +1,7 @@
-# ElaAdmin HTML5 Admin Dashboard Template
-**ElaAdnin** is a responsive Bootstrap 4 Admin Template. It provides you with a collection of ready to use code snippets and utilities, custom pages, loads of charts, dashboard variations, a collection of applications and some useful widgets. Preview of this awesome admin template available here: https://colorlib.com/polygon/elaadmin/index.html
+
+# Hybrid Net based Summarization with Cascading Agents
+Here we supprt online demo and video demonstration. Also, in this webpage we describe some critical research results briefly. For more detail, please contact with me by github or go to our paper as following: ![links](https://drive.google.com/file/d/1mYhUS-zq_LUPwLV-pFa-zsBsFGgAj5v5/view?usp=sharing)
+
 
 # Preview
 
@@ -7,38 +9,38 @@
 
 ![](https://i.imgur.com/ZXUfrZ9.png))
 
-### Demo Site: [Here](https://140.116.245.105:5000)
+### Demo Site: [Here](https://140.116.245.103:5000)
 
 
 ### Directory
 
-WebDemo/
-├── main.py
-├── README.md
-├── requirements.txt
-├── static
-│   ├── assets
-│   │   ├── css
-│   │   └── js
-│   └── images
-│       ├── ablation.png
-│       ├── abs.png
-│       ├── abstract.png
-│       ├── beamsize.png
-│       ├── comp.png
-│       ├── diverse.png
-│       ├── document.png
-│       ├── embed.png
-│       ├── ex1.png
-│       ├── ex2.png
-│       ├── human.png
-│       ├── ikm.png
-│       ├── local.png
-│       ├── logo.psd
-│       └── model.png
-├── templates
-│   └── index.html
-└── ZYweb.sh
+- WebDemo/
+- ├── main.py
+- ├── README.md
+- ├── requirements.txt
+- ├── static
+- │   ├── assets
+- │   │   ├── css
+- │   │   └── js
+- │   └── images
+- │       ├── ablation.png
+- │       ├── abs.png
+- │       ├── abstract.png
+- │       ├── beamsize.png
+- │       ├── comp.png
+- │       ├── diverse.png
+- │       ├── document.png
+- │       ├── embed.png
+- │       ├── ex1.png
+- │       ├── ex2.png
+- │       ├── human.png
+- │       ├── ikm.png
+- │       ├── local.png
+- │       ├── logo.psd
+- │       └── model.png
+- ├── templates
+- │   └── index.html
+- └── ZYweb.sh
 
 #### main.py 
 Running the web server by Flask package.
@@ -126,6 +128,9 @@ Initial Release
 - [Free Admin Dashboards](https://colorlib.com/wp/free-html5-admin-dashboard-templates/)
 - [Website Templates](https://colorlib.com/wp/templates/)
 - [WordPress Themes](https://colorlib.com/wp/free-wordpress-themes/)
+
+### ElaAdmin HTML5 Admin Dashboard Template
+**ElaAdnin** is a responsive Bootstrap 4 Admin Template. It provides you with a collection of ready to use code snippets and utilities, custom pages, loads of charts, dashboard variations, a collection of applications and some useful widgets. Preview of this awesome admin template available here: https://colorlib.com/polygon/elaadmin/index.html
 
 ### License
 
