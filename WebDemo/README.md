@@ -24,7 +24,6 @@ Here we supprt online demo and video demonstration. Also, in this webpage we des
 	 	* js
 	 	* images
 	* templates
-	* ZYweb.sh
 
 #### main.py 
 Running the web server by Flask package.
