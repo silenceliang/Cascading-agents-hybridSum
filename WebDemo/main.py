@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from flask_script import Manager, Server
+
 from app import app
 from model import Content, Summary, Article
 import app.static.summ as summarizationModel
@@ -20,7 +21,9 @@ def run_decode():
         # GET request with type String FROM front-end directly
         source = request.get_json()['source']
         # GET RESULT FROM python script, return String type
+
         sentNums, summary = summarizationModel.decode.run_(source)
+
         results = {'sent_no': sentNums, 'final': summary}
         article = Content(text=source)
         abstract = Summary(text=summary)
@@ -32,8 +35,6 @@ def run_decode():
     except:
         message = {'message' : 'Fail to catch the data from client.'}
         return json.dumps(message)
-
-
 
 
 if __name__ == "__main__":
