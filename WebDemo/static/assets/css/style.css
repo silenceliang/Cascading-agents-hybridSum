@@ -1,4 +1,4 @@
-/* This css file is to over write bootstarp css
+This css file is to over write bootstarp css
 --------------------------------------------------------- /
 * Theme Name: Ela Admin Template
 * Theme URI: http://demos.jeweltheme.com/
@@ -10,15 +10,7 @@
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 * Tags: html, themplate, Ela Admin
 --------------------------------------------------------- */
-/* 
 
-
-Googel Fonts  */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
-/* Googel Fonts End  
-
-*/
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 .bg-flat-color-1 {
   background: #00c292; }
 
@@ -133,13 +125,6 @@ Googel Fonts  */
 .mb-15 {
   margin-bottom: 15px; }
 
-/* 
-
-
-Googel Fonts  */
-/* Googel Fonts End  
-
-*/
 .bg-flat-color-1 {
   background: #00c292; }
 
@@ -2503,4 +2488,8 @@ footer.site-footer {
     left: inherit !important;
     right: 20px !important; }
 
-/*# sourceMappingURL=style.css.map */
+.genre:hover {
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=style.css.map
