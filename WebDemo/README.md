@@ -7,36 +7,36 @@ Here we supprt online demo and video demonstration. Also, in this webpage we des
 
 ### Screenshot
 
-![Here](https://i.imgur.com/ZXUfrZ9.png)
+![Here](https://i.imgur.com/7IhVExC.png)
+
+
 
 ### Demo Site: [Here](http://140.116.245.103:5000)
+description: know how![](https://i.imgur.com/7IhVExC.png)
 
 
 ### Directory
 
 * WebDemo/
+	* app
+		* static
+			* assets
+			* images
+			*summ
+		* templates
 	* main.py
+	* model.py
 	* README.md
 	* requirements.txt
-	* static
-		* assets
-	 	* css
-	 	* js
-	 	* images
-	* templates
 
 #### main.py 
-Running the web server by Flask package.
+Running the web server by Flask web framework.
 
 #### templates
-Here is a placement for .html scripts.
+Here is a placement for .html script.
 
 #### static
 Including javascript and css, raw resources such as image are here.
-
-#### ZYweb.sh
-A shell script for restart web server when we reboot our machine.
-
 
 ### TOC
 - [Built With](#built-with)
