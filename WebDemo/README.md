@@ -7,13 +7,11 @@ Here we supprt online demo and video demonstration. Also, in this webpage we des
 
 ### Screenshot
 
-![Here](https://i.imgur.com/7IhVExC.png)
+!![full](https://i.imgur.com/HPzUO3t.jpg)
 
 
 
 ### Demo Site: [Here](http://140.116.245.103:5000)
-description: know how![](https://i.imgur.com/7IhVExC.png)
-
 
 ### Directory
 
