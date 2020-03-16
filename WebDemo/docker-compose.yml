@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  webapp:
+    container_name: flask-webapp
+    build: ./flask_app
+    volumes:
+      - fk_data:/app
+    depends_on: 
+      - mongodb
+  nginx:
+    container_name: flask-nginx
+    build: ./nginx
+    volumes:
+      - ./log:/var/log/nginx
+    ports:
+      - '5001:80'
+    depends_on:
+      - webapp
+
+  mongodb:
+    container_name: flask-mongo
+    image: mongo
+    volumes:
+      - mongodb_data_container:/data/db
+      
+volumes:
+  fk_data:
+  mongodb_data_container:
+
