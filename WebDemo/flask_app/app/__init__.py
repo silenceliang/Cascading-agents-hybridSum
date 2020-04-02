@@ -1,7 +1,6 @@
-from flask import Flask, render_template, request
+from flask import Flask, request
 from flask_mongoengine import MongoEngine, MongoEngineSessionInterface
-import app.static.summ as summarizationModel
-import json, logging
+import logging
 
 class Config(object):
     DEBUG = True
@@ -22,7 +21,6 @@ class Config(object):
         "flask_debugtoolbar.panels.logger.LoggingPanel",
         "flask_mongoengine.panels.MongoDebugPanel",
     )
-
 
 app = Flask(__name__,  static_url_path='', 
             static_folder='static',

@@ -1,0 +1,6 @@
+.git
+data
+model
+*.py
+WebDemo/flask_app/app/static/summ
+
