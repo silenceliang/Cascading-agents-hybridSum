@@ -1,29 +1,5 @@
 /* global fetch alert $ */
 
-/**
- * Send a message to the server.
- * @param {string} url - Send the url to python backend.
- * @param {string} data - The literal text content.
- * @param {*} wrapper - The function preprocessing input data.
- */
-async function postData (url, data, wrapper) {
-  try {
-    const response = await fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-type': 'application/json'
-      },
-      body: JSON.stringify({
-        source: wrapper(data)
-      })
-    })
-    return await response.json()
-  } catch (e) {
-    console.error(e)
-    return { message: e }
-  }
-}
-
 window.addEventListener('DOMContentLoaded', () => {
   console.log('DOM fully loaded and parsed')
   $('#history').DataTable()
@@ -99,6 +75,10 @@ historicEventBtn.addEventListener('dblclick', e => {
   }
 })
 
+/**
+ * Chinese token checker
+ * @param {*} tokens - Ensure that user inputs token with English not Chinese at all.
+ */
 function chTest (tokens) {
   for (let i = 0; i < tokens.length; i++) {
     if (tokens.charCodeAt(i) >= 0x4e00 && tokens.charCodeAt(i) <= 0x9fa5) {
@@ -107,7 +87,10 @@ function chTest (tokens) {
   }
   return false
 }
-
+/**
+ * The limit of sequence length.
+ * @param {*} tokens - Ensure that the length of sequence is more that 5.
+ */
 function lengthTest (tokens) {
   if (tokens.length <= 5) return true
   else return false
@@ -136,4 +119,28 @@ function updateText (tokens) {
 function resizeIframe (obj) {
   obj.style.height =
     obj.contentWindow.document.documentElement.scrollHeight + 'px'
+}
+
+/**
+ * Send a message to the server.
+ * @param {string} url - Send the url to python backend.
+ * @param {string} data - The literal text content.
+ * @param {*} wrapper - The function preprocessing input data.
+ */
+async function postData (url, data, wrapper) {
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify({
+        source: wrapper(data)
+      })
+    })
+    return await response.json()
+  } catch (e) {
+    console.error(e)
+    return { message: e }
+  }
 }
