@@ -87,7 +87,7 @@ document.addEventListener('click', e => {
     console.debug('Open the link of dataset.')
     window.open('https://github.com/ChenRocks/cnn-dailymail', '_blank')
   }
-})
+}, false)
 
 const historicEventBtn = document.getElementById('history')
 historicEventBtn.addEventListener('dblclick', e => {
